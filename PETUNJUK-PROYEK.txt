@@ -1,0 +1,14 @@
+PROYEK WEBSITE JOGJA KONVEKSI
+
+1. Ekstrak folder proyek ini (jika masih dalam ZIP).
+2. Buka Visual Studio Code.
+3. Pilih File > Open Folder, lalu pilih folder jogja-konveksi.
+4. Buka index.html.
+5. Jalankan dengan ekstensi Live Server (klik kanan index.html > Open with Live Server), atau buka index.html langsung di browser.
+
+CATATAN:
+- Template Company dan folder assets bawaan dipertahankan agar CSS, JavaScript, ikon, dan komponen vendor tetap berfungsi.
+- Halaman Beranda telah disesuaikan untuk Jogja Konveksi.
+- Halaman lain masih merupakan halaman bawaan template dan akan disesuaikan bertahap.
+- Konten sejarah, anggota/jabatan, alamat, nomor kontak, dan foto asli perlu dikonfirmasi kepada pihak UMKM. Jangan menganggap teks umum atau ikon sementara sebagai data resmi.
+- Pastikan ketentuan lisensi BootstrapMade dipatuhi sebelum website dipublikasikan.

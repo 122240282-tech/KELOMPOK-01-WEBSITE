@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak &amp; Lokasi | Jogja Konveksi</title>
+<meta name="description" content="Hubungi Jogja Konveksi untuk konsultasi dan pemesanan. Kunjungi workshop di Jl. KH. Ahmad Dahlan No. 40, Yogyakarta.">
+<link href="assets/img/favicon.png" rel="icon"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Raleway:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet"><link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet"><link href="assets/css/custom-jogja.css" rel="stylesheet">
+<style>
+.jk-contact-intro{max-width:780px;margin:auto;text-align:center}
+.jk-contact-card{height:100%;padding:25px;border:1px solid #e7edf4;border-radius:13px;background:#fff;box-shadow:0 8px 25px rgba(25,48,80,.055)}
+.jk-contact-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:12px;background:#eaf2fb;color:#245b9b;font-size:24px;margin-bottom:16px}
+.jk-contact-card h3{font-size:19px;font-weight:800;color:#18365e;margin-bottom:8px}
+.jk-contact-card p{color:#667085;margin:0;line-height:1.75}
+.jk-contact-card a{overflow-wrap:anywhere}
+.jk-map-wrap{border-radius:14px;overflow:hidden;min-height:430px;box-shadow:0 8px 25px rgba(25,48,80,.08)}
+.jk-map-wrap iframe{width:100%;height:430px;border:0;display:block}
+.jk-contact-form{padding:30px;border:1px solid #e7edf4;border-radius:14px;background:#fff;box-shadow:0 8px 25px rgba(25,48,80,.055)}
+.jk-contact-form label{font-weight:700;color:#344054;margin-bottom:7px}
+.jk-contact-form .form-control,.jk-contact-form .form-select{padding:12px 14px;border-radius:8px}
+.jk-contact-form button{background:#245b9b;color:white;border:0;border-radius:8px;padding:12px 22px;font-weight:700}
+.jk-contact-form button:hover{background:#183f70}
+.jk-hours{background:#f3f7fb;border-radius:12px;padding:20px}
+.jk-hours strong{color:#18365e}
+@media(max-width:767px){.jk-contact-form{padding:22px}.jk-map-wrap iframe{height:340px}}
+
+/* Penyesuaian halaman Kontak & Lokasi mengikuti warna dan tipografi Beranda */
+.contact-page {
+  --accent-color: #1769AA;
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+}
+.contact-page .page-title.accent-background {
+  background: #1769AA !important;
+  background-image: none !important;
+}
+.contact-page .page-title h1,
+.contact-page .page-title p,
+.contact-page .page-title .breadcrumbs,
+.contact-page .page-title .breadcrumbs a,
+.contact-page .page-title .breadcrumbs .current { color: #fff !important; }
+.contact-page .section-title h2 {
+  color: #17365D;
+  font-family: 'Plus Jakarta Sans', 'Raleway', sans-serif;
+  font-size: clamp(27px, 3vw, 36px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -.7px;
+}
+.contact-page .section-title h2::after { background: #1769AA !important; }
+.contact-page .section-title p {
+  color: #61758C;
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+.contact-page .jk-contact-intro > p,
+.contact-page main section .container > .row > .col-lg-6 > p,
+.contact-page main section .container > .row > .col-lg-5 > p {
+  color: #444B55;
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+  font-size: 16.5px;
+  line-height: 1.85;
+  text-align: justify;
+}
+.contact-page .jk-contact-card {
+  border-color: #DCE7F0;
+  box-shadow: 0 8px 25px rgba(23, 54, 93, .06);
+}
+.contact-page .jk-contact-icon {
+  background: #EAF3FB;
+  color: #1769AA;
+}
+.contact-page .jk-contact-card h3 {
+  color: #17365D;
+  font-family: 'Plus Jakarta Sans', 'Raleway', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+}
+.contact-page .jk-contact-card p {
+  color: #596B80;
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.contact-page .jk-contact-card a { color: #1769AA; font-weight: 700; }
+.contact-page .jk-contact-card a:hover { color: #124F83; }
+.contact-page main section.light-background {
+  background: linear-gradient(180deg, #EDF5FB 0%, #F5F8FC 55%, #EAF2F9 100%);
+}
+.contact-page .jk-map-wrap {
+  box-shadow: 0 8px 25px rgba(23, 54, 93, .09);
+}
+.contact-page .jk-hours {
+  background: #EAF3FB;
+  border: 1px solid #DCE7F0;
+}
+.contact-page .jk-hours strong { color: #17365D; }
+.contact-page .jk-hours p {
+  color: #596B80;
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.contact-page .btn.btn-primary,
+.contact-page .jk-contact-form button {
+  background: #1769AA !important;
+  border-color: #1769AA !important;
+  color: #fff !important;
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+}
+.contact-page .btn.btn-primary:hover,
+.contact-page .jk-contact-form button:hover {
+  background: #124F83 !important;
+  border-color: #124F83 !important;
+}
+.contact-page .jk-contact-form {
+  border-color: #DCE7F0;
+  box-shadow: 0 8px 25px rgba(23, 54, 93, .06);
+}
+.contact-page .jk-contact-form label {
+  color: #17365D;
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.contact-page .jk-contact-form .form-control,
+.contact-page .jk-contact-form .form-select {
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.contact-page main .text-primary { color: #1769AA !important; }
+@media (max-width: 767px) {
+  .contact-page .section-title h2 { font-size: 27px; }
+  .contact-page .section-title p { font-size: 15px; }
+  .contact-page .jk-contact-card h3 { font-size: 18px; }
+  .contact-page .jk-contact-card p { font-size: 14px; }
+}
+
+</style></head>
+<body class="contact-page">
+<header id="header" class="header d-flex align-items-center sticky-top">
+<div class="container position-relative d-flex align-items-center">
+<a href="index.html" class="logo d-flex align-items-center me-auto"><h1 class="sitename">Jogja Konveksi</h1><span>.</span></a>
+<nav id="navmenu" class="navmenu" aria-label="Navigasi utama"><ul>
+<li><a href="index.html">Beranda</a></li><li><a href="about.html">Profil &amp; Sejarah</a></li>
+<li><a href="team.html">Struktur Organisasi</a></li><li><a href="portfolio.html">Produk</a></li>
+<li><a href="services.html">Layanan</a></li><li><a href="portfolio-details.html">Portofolio</a></li>
+<li><a href="contact.html" class="active">Kontak &amp; Lokasi</a></li>
+</ul><i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Buka menu"></i></nav>
+</div></header>
+<main class="main">
+<div class="page-title accent-background"><div class="container d-lg-flex justify-content-between align-items-center">
+<div><h1 class="mb-1">Kontak &amp; Lokasi</h1><p class="mb-0">Hubungi dan kunjungi workshop Jogja Konveksi</p></div>
+<nav class="breadcrumbs"><ol><li><a href="index.html">Beranda</a></li><li class="current">Kontak &amp; Lokasi</li></ol></nav>
+</div></div>
+<section class="section"><div class="container">
+<div class="jk-contact-intro" data-aos="fade-up"><div class="section-title"><h2>Hubungi Kami</h2><p>Konsultasikan kebutuhan konveksi Anda</p></div>
+<p>Untuk informasi produk, konsultasi desain, maupun pemesanan, silakan hubungi Customer Service Jogja Konveksi melalui WhatsApp atau datang langsung ke workshop kami di Yogyakarta.</p></div>
+<div class="row gy-4 mt-3">
+<div class="col-lg-4 col-md-6" data-aos="fade-up"><div class="jk-contact-card"><div class="jk-contact-icon"><i class="bi bi-telephone"></i></div><h3>WhatsApp / Customer Service</h3><p><a href="https://wa.me/6285138591345" target="_blank" rel="noopener">0851-3859-1345</a><br>Hubungi kami untuk konsultasi dan informasi pemesanan.</p></div></div>
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100"><div class="jk-contact-card"><div class="jk-contact-icon"><i class="bi bi-geo-alt"></i></div><h3>Alamat Workshop</h3><p>Jl. KH. Ahmad Dahlan No. 40, Ngupasan, Kec. Gondomanan, Kota Yogyakarta, DI Yogyakarta 55122.<br><small>Barat PKU Muhammadiyah</small></p></div></div>
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200"><div class="jk-contact-card"><div class="jk-contact-icon"><i class="bi bi-clock"></i></div><h3>Jam Operasional</h3><p>Senin–Sabtu<br><strong>08.00–17.00 WIB</strong><br>Minggu dan hari libur: silakan konfirmasi terlebih dahulu.</p></div></div>
+<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250"><div class="jk-contact-card"><div class="jk-contact-icon"><i class="bi bi-instagram"></i></div><h3>Instagram</h3><p><a href="https://www.instagram.com/jogjakonveksii/" target="_blank" rel="noopener">@jogjakonveksii</a><br>Ikuti Instagram Jogja Konveksi untuk melihat informasi dan contoh produk terbaru.</p></div></div>
+</div></div></section>
+<section class="section light-background"><div class="container"><div class="row gy-4 align-items-stretch">
+<div class="col-lg-6" data-aos="fade-up"><div class="section-title"><h2>Lokasi Workshop</h2><p>Temukan lokasi Jogja Konveksi</p></div>
+<p>Workshop Jogja Konveksi berada di kawasan Ngupasan, Kecamatan Gondomanan, Kota Yogyakarta. Gunakan peta berikut untuk melihat lokasi dan merencanakan kunjungan.</p>
+<div class="jk-hours mt-4"><strong><i class="bi bi-info-circle me-2"></i>Sebelum berkunjung</strong><p class="mb-0 mt-2">Disarankan menghubungi Customer Service terlebih dahulu untuk memastikan waktu kunjungan dan kebutuhan konsultasi.</p></div>
+<a class="btn btn-primary mt-4" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+KH.+Ahmad+Dahlan+No.40+Ngupasan+Gondomanan+Yogyakarta" target="_blank" rel="noopener">Buka Petunjuk Arah <i class="bi bi-arrow-up-right"></i></a>
+</div>
+<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100"><div class="jk-map-wrap"><iframe title="Peta lokasi Workshop Jogja Konveksi" src="https://maps.google.com/maps?q=Jl.%20KH.%20Ahmad%20Dahlan%20No.40%2C%20Ngupasan%2C%20Gondomanan%2C%20Yogyakarta&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></div>
+</div></div></section>
+<section class="section"><div class="container"><div class="row gy-4">
+<div class="col-lg-5" data-aos="fade-up"><div class="section-title"><h2>Kirim Pesan</h2><p>Mulai konsultasi pesanan Anda</p></div><p>Isi informasi singkat berikut. Setelah menekan tombol, Anda akan diarahkan ke WhatsApp Jogja Konveksi untuk mengirim pesan.</p>
+<ul class="list-unstyled mt-4"><li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Konsultasi jenis produk</li><li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Diskusi desain dan bahan</li><li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Informasi estimasi pemesanan</li></ul>
+</div>
+<div class="col-lg-7" data-aos="fade-up" data-aos-delay="100"><form id="jkWhatsAppForm" class="jk-contact-form">
+<div class="row gy-3"><div class="col-md-6"><label for="jkName">Nama</label><input class="form-control" id="jkName" type="text" placeholder="Nama Anda" required></div>
+<div class="col-md-6"><label for="jkPhone">Nomor WhatsApp</label><input class="form-control" id="jkPhone" type="tel" placeholder="Nomor yang bisa dihubungi" required></div>
+<div class="col-12"><label for="jkSubject">Keperluan</label><select class="form-select" id="jkSubject" required><option value="">Pilih kebutuhan</option><option>Seragam / Kemeja</option><option>Kaos / Polo</option><option>Jaket / Hoodie</option><option>Jersey / Pakaian Olahraga</option><option>Tas / Aksesori</option><option>Bordir / Sablon</option><option>Lainnya</option></select></div>
+<div class="col-12"><label for="jkMessage">Pesan</label><textarea class="form-control" id="jkMessage" rows="5" placeholder="Ceritakan kebutuhan, jumlah, atau detail pesanan Anda..." required></textarea></div>
+<div class="col-12"><button type="submit"><i class="bi bi-whatsapp me-2"></i>Kirim melalui WhatsApp</button></div></div>
+</form></div>
+</div></div></section>
+</main>
+<footer id="footer" class="footer dark-background"><div class="container footer-top"><div class="row gy-4">
+<div class="col-lg-5 col-md-6 footer-about"><a href="index.html" class="logo d-flex align-items-center"><span class="sitename">Jogja Konveksi</span></a>
+<p>Melayani pembuatan berbagai kebutuhan pakaian dan produk konveksi untuk perorangan, komunitas, sekolah, perusahaan, dan instansi.</p>
+<div class="footer-contact pt-2"><p>Jl. KH. Ahmad Dahlan No. 40, Ngupasan, Gondomanan</p><p>Kota Yogyakarta, DI Yogyakarta 55122</p><p class="mt-3"><strong>WhatsApp:</strong> <span>0851-3859-1345</span></p></div></div>
+<div class="col-lg-3 col-md-6 footer-links"><h4>Navigasi</h4><ul><li><a href="index.html">Beranda</a></li><li><a href="about.html">Profil &amp; Sejarah</a></li><li><a href="team.html">Struktur Organisasi</a></li><li><a href="portfolio.html">Produk</a></li><li><a href="services.html">Layanan</a></li></ul></div>
+<div class="col-lg-4 col-md-6 footer-links"><h4>Informasi</h4><ul><li><a href="portfolio-details.html">Portofolio</a></li><li><a href="contact.html">Kontak &amp; Lokasi</a></li><li><a href="https://jogjakonveksi.co.id/contact/" target="_blank" rel="noopener">Kontak Resmi Jogja Konveksi</a></li><li><a href="https://www.instagram.com/jogjakonveksii/" target="_blank" rel="noopener">Instagram @jogjakonveksii</a></li></ul></div>
+</div></div><div class="container copyright text-center mt-4"><p>© <strong class="px-1 sitename">Jogja Konveksi</strong> <span>Website Profil UMKM</span></p><div class="credits">Template dasar oleh <a href="https://bootstrapmade.com/">BootstrapMade</a></div></div></footer>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a><div id="preloader"></div>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script><script src="assets/vendor/aos/aos.js"></script><script src="assets/js/main.js"></script>
+<script>
+document.getElementById('jkWhatsAppForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const nama=document.getElementById('jkName').value.trim();
+ const telp=document.getElementById('jkPhone').value.trim();
+ const keperluan=document.getElementById('jkSubject').value;
+ const pesan=document.getElementById('jkMessage').value.trim();
+ const text=`Halo Jogja Konveksi, saya ingin konsultasi.\n\nNama: ${nama}\nNomor WhatsApp: ${telp}\nKeperluan: ${keperluan}\nPesan: ${pesan}`;
+ window.open('https://wa.me/6285138591345?text='+encodeURIComponent(text),'_blank','noopener');
+});
+</script>
+</body></html>
